@@ -162,7 +162,7 @@ void Job::on_socket_connected()
                 fprintf(stderr, "Job: Malformed HTTP header: '%s' (%zu)\n", chomped_line.characters(), chomped_line.length());
                 return deferred_invoke([this](auto&) { did_fail(Core::NetworkJob::Error::ProtocolFailed); });
             }
-            auto value = chomped_line.substring(name.length() + 2, chomped_line.length() - name.length() - 2);
+            auto value = chomped_line.substring(name.length() + 2, chomped_line.length() - name.length() - 2).trim_whitespace();
             m_headers.set(name, value);
 #ifdef JOB_DEBUG
             dbg() << "Job: [" << name << "] = '" << value << "'";
