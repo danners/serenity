@@ -504,6 +504,10 @@ static bool is_wrappable_type(const IDL::Type& type)
         return true;
     if (type.name == "ImageData")
         return true;
+    if (type.name == "SVGAnimatedLength")
+        return true;
+    if (type.name == "SVGLength")
+        return true;
     return false;
 }
 
@@ -1226,6 +1230,8 @@ void generate_prototype_implementation(const IDL::Interface& interface)
 #include <LibWeb/Bindings/NodeWrapperFactory.h>
 #include <LibWeb/Bindings/PerformanceTimingWrapper.h>
 #include <LibWeb/Bindings/RangeWrapper.h>
+#include <LibWeb/Bindings/SVGAnimatedLengthWrapper.h>
+#include <LibWeb/Bindings/SVGLengthWrapper.h>
 #include <LibWeb/Bindings/StyleSheetListWrapper.h>
 #include <LibWeb/Bindings/TextWrapper.h>
 #include <LibWeb/Bindings/WindowObject.h>
@@ -1265,6 +1271,7 @@ using namespace Web::DOM;
 using namespace Web::HTML;
 using namespace Web::NavigationTiming;
 using namespace Web::XHR;
+using namespace Web::SVG;
 
 namespace Web::Bindings {
 

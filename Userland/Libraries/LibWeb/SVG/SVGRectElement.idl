@@ -1,0 +1,7 @@
+interface SVGRectElement : SVGGeometryElement {
+
+    readonly attribute SVGAnimatedLength x;
+    readonly attribute SVGAnimatedLength y;
+
+
+};

@@ -10,6 +10,7 @@
 #include <LibWeb/DOM/Event.h>
 #include <LibWeb/Layout/SVGSVGBox.h>
 #include <LibWeb/SVG/SVGPathElement.h>
+#include <LibWeb/SVG/SVGRectElement.h>
 #include <LibWeb/SVG/SVGSVGElement.h>
 #include <ctype.h>
 

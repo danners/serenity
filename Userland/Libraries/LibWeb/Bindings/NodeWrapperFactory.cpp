@@ -82,6 +82,8 @@
 #include <LibWeb/Bindings/HTMLVideoElementWrapper.h>
 #include <LibWeb/Bindings/NodeWrapper.h>
 #include <LibWeb/Bindings/NodeWrapperFactory.h>
+#include <LibWeb/Bindings/SVGAnimatedLengthWrapper.h>
+#include <LibWeb/Bindings/SVGLengthWrapper.h>
 #include <LibWeb/Bindings/SVGPathElementWrapper.h>
 #include <LibWeb/Bindings/SVGSVGElementWrapper.h>
 #include <LibWeb/Bindings/TextWrapper.h>
@@ -156,8 +158,11 @@
 #include <LibWeb/HTML/HTMLUListElement.h>
 #include <LibWeb/HTML/HTMLUnknownElement.h>
 #include <LibWeb/HTML/HTMLVideoElement.h>
+#include <LibWeb/SVG/SVGAnimatedLength.h>
+#include <LibWeb/SVG/SVGLength.h>
 #include <LibWeb/SVG/SVGPathElement.h>
 #include <LibWeb/SVG/SVGSVGElement.h>
+#include <LibWeb/SVG/SVGRectElement.h>
 
 namespace Web::Bindings {
 

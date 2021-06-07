@@ -147,10 +147,13 @@ class PerformanceTiming;
 }
 
 namespace Web::SVG {
+class SVGAnimatedLength;
 class SVGElement;
 class SVGGeometryElement;
 class SVGGraphicsElement;
+class SVGLength;
 class SVGPathElement;
+class SVGRectElement;
 class SVGSVGElement;
 }
 
@@ -299,9 +302,12 @@ class ProgressEventWrapper;
 class ScreenWrapper;
 class ScriptExecutionContext;
 class SubmitEventWrapper;
+class SVGAnimatedLengthWrapper;
 class SVGElementWrapper;
 class SVGGeometryElementWrapper;
 class SVGGraphicsElementWrapper;
+class SVGLengthWrapper;
+class SVGRectElementWrapper;
 class SVGPathElementWrapper;
 class SVGSVGElementWrapper;
 class StyleSheetWrapper;

@@ -185,6 +185,7 @@ set(SOURCES
     Layout/SVGBox.cpp
     Layout/SVGGraphicsBox.cpp
     Layout/SVGPathBox.cpp
+    Layout/SVGRectBox.cpp
     Layout/SVGSVGBox.cpp
     Layout/TableBox.cpp
     Layout/TableCellBox.cpp
@@ -211,10 +212,16 @@ set(SOURCES
     Page/Page.cpp
     Painting/BorderPainting.cpp
     Painting/StackingContext.cpp
+    SVG/SVGAnimatedLength.idl
+    SVG/SVGAnimatedLength.cpp
     SVG/SVGElement.cpp
     SVG/SVGGeometryElement.cpp
     SVG/SVGGraphicsElement.cpp
+    SVG/SVGLength.idl
+    SVG/SVGLength.cpp
     SVG/SVGPathElement.cpp
+    SVG/SVGRectElement.idl
+    SVG/SVGRectElement.cpp
     SVG/SVGSVGElement.cpp
     SVG/TagNames.cpp
     StylePropertiesModel.cpp
@@ -401,10 +408,13 @@ libweb_js_wrapper(HTML/SubmitEvent)
 libweb_js_wrapper(HTML/WebSocket)
 libweb_js_wrapper(HighResolutionTime/Performance)
 libweb_js_wrapper(NavigationTiming/PerformanceTiming)
+libweb_js_wrapper(SVG/SVGAnimatedLength)
 libweb_js_wrapper(SVG/SVGElement)
 libweb_js_wrapper(SVG/SVGGeometryElement)
 libweb_js_wrapper(SVG/SVGGraphicsElement)
+libweb_js_wrapper(SVG/SVGLength)
 libweb_js_wrapper(SVG/SVGPathElement)
+libweb_js_wrapper(SVG/SVGRectElement)
 libweb_js_wrapper(SVG/SVGSVGElement)
 libweb_js_wrapper(UIEvents/MouseEvent)
 libweb_js_wrapper(UIEvents/UIEvent)
